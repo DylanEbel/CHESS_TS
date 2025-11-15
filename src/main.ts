@@ -14,9 +14,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <label for="depthSelect">Depth:</label>
       <select id="depthSelect">
         <option value="1">1</option>
-        <option value="2" selected>2</option>
-        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
         <option value="4">4</option>
+        <option value="5">5</option>
       </select>
 
       <!-- Reverse Board -->
