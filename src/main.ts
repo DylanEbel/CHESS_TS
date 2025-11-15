@@ -4,6 +4,16 @@ import { Game } from "./Classes/game";
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div style="display: flex; flex-direction: column; align-items: center;">
     <h1>CHESS</h1>
+          <div style="display: flex; align-items: center; margin-top: -45px; margin-bottom: 30px; gap: 5px;">
+            <p>By:</p>
+            <a href="https://github.com/DylanEbel" target="_blank"
+   style="color: #0a66c2; font-weight: 600; text-decoration: none; transition: color 0.2s;"
+   onmouseover="this.style.color='#004182'"
+   onmouseout="this.style.color='#0a66c2'"
+   >
+  Dylan Ebel
+</a>
+          </div>
 
     <!-- Controls -->
     <div id="controls" style="margin-top: -20px; margin-bottom: 10px; display: flex; gap: 15px; align-items: center;">
@@ -50,14 +60,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
 const boardEl: HTMLElement | null = document.getElementById("board");
 const promotionSelector: HTMLElement | null =
-document.getElementById("promotionModal");
+  document.getElementById("promotionModal");
 const depthSelector: HTMLElement | null =
-document.getElementById("depthSelect");
+  document.getElementById("depthSelect");
 const undoMove: HTMLElement | null = document.getElementById("undoMove");
 const reverseBoard: HTMLElement | null =
-document.getElementById("reverseBoardBtn");
-const restartButton: HTMLElement | null = document.getElementById("restartBtn")
-const outcomeText: HTMLElement | null = document.getElementById("outcome")
+  document.getElementById("reverseBoardBtn");
+const restartButton: HTMLElement | null = document.getElementById("restartBtn");
+const outcomeText: HTMLElement | null = document.getElementById("outcome");
 
 if (
   boardEl &&
@@ -85,7 +95,5 @@ if (
     outcomeText
   );
 
-  game
+  game;
 }
-
-
